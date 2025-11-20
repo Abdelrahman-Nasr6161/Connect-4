@@ -3,9 +3,9 @@ from PyQt5.QtCore import Qt, QTimer, QPropertyAnimation, QEasingCurve, QPoint
 from PyQt5.QtGui import QPainter, QColor, QPen, QRadialGradient, QLinearGradient
 import sys
 import random
-
+from minimax import minimax_with_tree, build_graphviz, write_tree_to_file
 from functions import ROWS, COLS, get_moves, drop_piece, is_terminal, count_fours
-
+from treeGraphWindow import GraphWindow
 class BoardWidget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -129,7 +129,7 @@ class Connect4Window(QMainWindow):
                 background: #1e293b;
             }
         """)
-        
+        self.is_player_turn = True
         self.game_over = False
         
         # Central widget
@@ -169,7 +169,7 @@ class Connect4Window(QMainWindow):
         self.resize(700, 750)
     
     def on_column_click(self, col):
-        if self.game_over or col not in get_moves(self.board_widget.board):
+        if self.game_over or not self.is_player_turn or col not in get_moves(self.board_widget.board):
             return
 
         # Player move
@@ -184,7 +184,7 @@ class Connect4Window(QMainWindow):
             self.ai_fours = 0
 
         # Player scoring
-        current_player_fours = count_fours(self.board_widget.board, 1)
+        _,current_player_fours = count_fours(self.board_widget.board, 1)
         delta = current_player_fours - self.player_prev_fours
 
         if delta > 0:
@@ -205,7 +205,7 @@ class Connect4Window(QMainWindow):
         if is_terminal(self.board_widget.board):
             self.end_game()
             return
-
+        self.is_player_turn = False
         # AI move
         self.status_label.setText("AI is thinking...")
         self.status_label.setStyleSheet("font-size: 20px; color: #fbbf24;")
@@ -217,12 +217,21 @@ class Connect4Window(QMainWindow):
             self.end_game()
             return
 
-        ai_col = random.choice(valid_moves)
+        tree,_,ai_col = minimax_with_tree(self.board_widget.board,2,True)
+        
+        graph = build_graphviz(tree)
+        image_path = "minimax_tree.png"
+        graph.render(filename="minimax_tree", cleanup=True)
+
+        write_tree_to_file(tree, "minimax_tree.txt")
+        
+        self.tree_window = GraphWindow(image_path)
+        self.tree_window.show()
+        
         self.board_widget.board = drop_piece(self.board_widget.board, ai_col, 2)
         self.board_widget.update()
-
         # AI scoring
-        current_ai_fours = count_fours(self.board_widget.board, 2)
+        _,current_ai_fours = count_fours(self.board_widget.board, 2)
         delta = current_ai_fours - self.ai_prev_fours
 
         if delta > 0:
@@ -242,6 +251,7 @@ class Connect4Window(QMainWindow):
         # End game if board full
         if is_terminal(self.board_widget.board):
             self.end_game()
+        self.is_player_turn = True
  
     def reset_game(self):
         self.board_widget.board = [[0 for _ in range(COLS)] for _ in range(ROWS)]
