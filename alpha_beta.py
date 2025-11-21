@@ -15,6 +15,13 @@ class TreeNode:
         self.beta = None          # final beta value at this node
         self.pruned = False       # whether this branch was pruned
 
+memo = {}
+
+def board_key(board):
+    """Convert board into a tuple-of-tuples for hashing."""
+    return tuple(tuple(row) for row in board)
+
+
 def _sanitize_label_text(s):
     """Replace problematic Unicode with ASCII fallbacks for fallback mode."""
     if s is None:
@@ -168,13 +175,15 @@ def should_prune(alpha, beta):
 
 def ab_pruning_with_tree(board, depth, maximizing_player, current_depth=0, alpha=float('-inf'), beta=float('inf')):
     valid_moves = get_moves(board)
-
+    key = (board_key(board) , depth,maximizing_player)
     node = TreeNode(
         move=None,
         player=2 if maximizing_player else 1,
         depth=current_depth
     )
-
+    if key in memo:
+        node.score = memo[key]
+        return node , node.score, None
     # Stopping condition for recursion – max specified depth or board full
     if depth == 0 or is_terminal(board):
         node.score = heurestic(board)

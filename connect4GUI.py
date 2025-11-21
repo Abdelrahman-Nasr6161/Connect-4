@@ -278,7 +278,7 @@ class Connect4Window(QMainWindow):
         write_tree = cfg["write_tree"]
         output_base = cfg["output_base"]
 
-        tree, _, ai_col = func(self.board_widget.board, 5, True)
+        tree, _, ai_col = func(self.board_widget.board, 4, True)
 
         # Generate graph
         try:
