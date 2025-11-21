@@ -1,0 +1,301 @@
+- Depth 0 | Player 2 | Move None | Score 0.48749999999999993
+    - Depth 0 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+        - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.7174999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score 0.4874999999999998
+                - Depth 2 | Player 2 | Move 3 | Score 1.0625
+            - Depth 1 | Player 1 | Move 3 | Score 0.9474999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 1.0625
+                - Depth 2 | Player 2 | Move 2 | Score 0.4874999999999998
+                - Depth 2 | Player 2 | Move 4 | Score 1.0625
+            - Depth 1 | Player 1 | Move 4 | Score 1.0625 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 1.0625
+                - Depth 2 | Player 2 | Move 3 | Score 1.0625
+                - Depth 2 | Player 2 | Move 5 | Score 1.0625
+            - Depth 1 | Player 1 | Move 5 | Score 1.0625 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 1.0625
+                - Depth 2 | Player 2 | Move 4 | Score 1.0625
+                - Depth 2 | Player 2 | Move 6 | Score 1.0625
+            - Depth 1 | Player 1 | Move 6 | Score 1.0625 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 1.0625
+                - Depth 2 | Player 2 | Move 5 | Score 1.0625
+    - Depth 0 | Player 2 | Move 2 | Score 0.48749999999999993 | Chance Node
+        - Depth 1 | Player 1 | Move 2 | Score 0.7124999999999999
+            - Depth 1 | Player 1 | Move 0 | Score 0.7124999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score 0.7124999999999999 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 1.0525000000000002 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score 0.5875000000000004
+                - Depth 2 | Player 2 | Move 3 | Score 1.75
+            - Depth 1 | Player 1 | Move 3 | Score 1.5175000000000003 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 1.75
+                - Depth 2 | Player 2 | Move 2 | Score 0.5875000000000004
+                - Depth 2 | Player 2 | Move 4 | Score 1.75
+            - Depth 1 | Player 1 | Move 4 | Score 1.7500000000000002 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 1.75
+                - Depth 2 | Player 2 | Move 3 | Score 1.75
+                - Depth 2 | Player 2 | Move 5 | Score 1.75
+            - Depth 1 | Player 1 | Move 5 | Score 1.7500000000000002 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 1.75
+                - Depth 2 | Player 2 | Move 4 | Score 1.75
+                - Depth 2 | Player 2 | Move 6 | Score 1.75
+            - Depth 1 | Player 1 | Move 6 | Score 1.75 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 1.75
+                - Depth 2 | Player 2 | Move 5 | Score 1.75
+        - Depth 1 | Player 1 | Move 3 | Score 0.1499999999999999
+            - Depth 1 | Player 1 | Move 0 | Score 0.1499999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score 0.1499999999999999 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.7274999999999998 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score 0.6124999999999998
+                - Depth 2 | Player 2 | Move 3 | Score 0.8999999999999999
+            - Depth 1 | Player 1 | Move 3 | Score 0.8374999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.8999999999999999
+                - Depth 2 | Player 2 | Move 2 | Score 0.6124999999999998
+                - Depth 2 | Player 2 | Move 4 | Score 0.875
+            - Depth 1 | Player 1 | Move 4 | Score 0.9425000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.875
+                - Depth 2 | Player 2 | Move 3 | Score 0.8999999999999999
+                - Depth 2 | Player 2 | Move 5 | Score 1.1875
+            - Depth 1 | Player 1 | Move 5 | Score 1.125 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 1.1875
+                - Depth 2 | Player 2 | Move 4 | Score 0.875
+                - Depth 2 | Player 2 | Move 6 | Score 1.1875
+            - Depth 1 | Player 1 | Move 6 | Score 1.1875 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 1.1875
+                - Depth 2 | Player 2 | Move 5 | Score 1.1875
+    - Depth 0 | Player 2 | Move 3 | Score 0.1374999999999999 | Chance Node
+        - Depth 1 | Player 1 | Move 3 | Score 0.1499999999999999
+            - Depth 1 | Player 1 | Move 0 | Score 0.1499999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score 0.1499999999999999 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.7274999999999998 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score 0.6124999999999998
+                - Depth 2 | Player 2 | Move 3 | Score 0.8999999999999999
+            - Depth 1 | Player 1 | Move 3 | Score 0.8374999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.8999999999999999
+                - Depth 2 | Player 2 | Move 2 | Score 0.6124999999999998
+                - Depth 2 | Player 2 | Move 4 | Score 0.875
+            - Depth 1 | Player 1 | Move 4 | Score 0.9425000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.875
+                - Depth 2 | Player 2 | Move 3 | Score 0.8999999999999999
+                - Depth 2 | Player 2 | Move 5 | Score 1.1875
+            - Depth 1 | Player 1 | Move 5 | Score 1.125 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 1.1875
+                - Depth 2 | Player 2 | Move 4 | Score 0.875
+                - Depth 2 | Player 2 | Move 6 | Score 1.1875
+            - Depth 1 | Player 1 | Move 6 | Score 1.1875 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 1.1875
+                - Depth 2 | Player 2 | Move 5 | Score 1.1875
+        - Depth 1 | Player 1 | Move 2 | Score 0.7124999999999999
+            - Depth 1 | Player 1 | Move 0 | Score 0.7124999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score 0.7124999999999999 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 1.0525000000000002 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score 0.5875000000000004
+                - Depth 2 | Player 2 | Move 3 | Score 1.75
+            - Depth 1 | Player 1 | Move 3 | Score 1.5175000000000003 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 1.75
+                - Depth 2 | Player 2 | Move 2 | Score 0.5875000000000004
+                - Depth 2 | Player 2 | Move 4 | Score 1.75
+            - Depth 1 | Player 1 | Move 4 | Score 1.7500000000000002 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 1.75
+                - Depth 2 | Player 2 | Move 3 | Score 1.75
+                - Depth 2 | Player 2 | Move 5 | Score 1.75
+            - Depth 1 | Player 1 | Move 5 | Score 1.7500000000000002 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 1.75
+                - Depth 2 | Player 2 | Move 4 | Score 1.75
+                - Depth 2 | Player 2 | Move 6 | Score 1.75
+            - Depth 1 | Player 1 | Move 6 | Score 1.75 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 1.75
+                - Depth 2 | Player 2 | Move 5 | Score 1.75
+        - Depth 1 | Player 1 | Move 4 | Score -0.4750000000000001
+            - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.2174999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+            - Depth 1 | Player 1 | Move 3 | Score 0.4474999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+            - Depth 1 | Player 1 | Move 4 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+            - Depth 1 | Player 1 | Move 5 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+            - Depth 1 | Player 1 | Move 6 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+    - Depth 0 | Player 2 | Move 4 | Score -0.3500000000000001 | Chance Node
+        - Depth 1 | Player 1 | Move 4 | Score -0.4750000000000001
+            - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.2174999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+            - Depth 1 | Player 1 | Move 3 | Score 0.4474999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+            - Depth 1 | Player 1 | Move 4 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+            - Depth 1 | Player 1 | Move 5 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+            - Depth 1 | Player 1 | Move 6 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+        - Depth 1 | Player 1 | Move 3 | Score 0.1499999999999999
+            - Depth 1 | Player 1 | Move 0 | Score 0.1499999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score 0.1499999999999999 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.7274999999999998 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score 0.6124999999999998
+                - Depth 2 | Player 2 | Move 3 | Score 0.8999999999999999
+            - Depth 1 | Player 1 | Move 3 | Score 0.8374999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.8999999999999999
+                - Depth 2 | Player 2 | Move 2 | Score 0.6124999999999998
+                - Depth 2 | Player 2 | Move 4 | Score 0.875
+            - Depth 1 | Player 1 | Move 4 | Score 0.9425000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.875
+                - Depth 2 | Player 2 | Move 3 | Score 0.8999999999999999
+                - Depth 2 | Player 2 | Move 5 | Score 1.1875
+            - Depth 1 | Player 1 | Move 5 | Score 1.125 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 1.1875
+                - Depth 2 | Player 2 | Move 4 | Score 0.875
+                - Depth 2 | Player 2 | Move 6 | Score 1.1875
+            - Depth 1 | Player 1 | Move 6 | Score 1.1875 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 1.1875
+                - Depth 2 | Player 2 | Move 5 | Score 1.1875
+        - Depth 1 | Player 1 | Move 5 | Score -0.4750000000000001
+            - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.2174999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+            - Depth 1 | Player 1 | Move 3 | Score 0.4474999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+            - Depth 1 | Player 1 | Move 4 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+            - Depth 1 | Player 1 | Move 5 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+            - Depth 1 | Player 1 | Move 6 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+    - Depth 0 | Player 2 | Move 5 | Score -0.4750000000000001 | Chance Node
+        - Depth 1 | Player 1 | Move 5 | Score -0.4750000000000001
+            - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.2174999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+            - Depth 1 | Player 1 | Move 3 | Score 0.4474999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+            - Depth 1 | Player 1 | Move 4 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+            - Depth 1 | Player 1 | Move 5 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+            - Depth 1 | Player 1 | Move 6 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+        - Depth 1 | Player 1 | Move 4 | Score -0.4750000000000001
+            - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.2174999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+            - Depth 1 | Player 1 | Move 3 | Score 0.4474999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+            - Depth 1 | Player 1 | Move 4 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+            - Depth 1 | Player 1 | Move 5 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+            - Depth 1 | Player 1 | Move 6 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+        - Depth 1 | Player 1 | Move 6 | Score -0.4750000000000001
+            - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.2174999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+            - Depth 1 | Player 1 | Move 3 | Score 0.4474999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+            - Depth 1 | Player 1 | Move 4 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+            - Depth 1 | Player 1 | Move 5 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+            - Depth 1 | Player 1 | Move 6 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+    - Depth 0 | Player 2 | Move 6 | Score -0.4750000000000001 | Chance Node
+        - Depth 1 | Player 1 | Move 6 | Score -0.4750000000000001
+            - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.2174999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+            - Depth 1 | Player 1 | Move 3 | Score 0.4474999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+            - Depth 1 | Player 1 | Move 4 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+            - Depth 1 | Player 1 | Move 5 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+            - Depth 1 | Player 1 | Move 6 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+        - Depth 1 | Player 1 | Move 5 | Score -0.4750000000000001
+            - Depth 1 | Player 1 | Move 0 | Score -0.4750000000000001 | Chance Node
+                - Depth 2 | Player 2 | Move 0 | Score -0.4750000000000001 | Chance Node
+            - Depth 1 | Player 1 | Move 2 | Score 0.2174999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+            - Depth 1 | Player 1 | Move 3 | Score 0.4474999999999999 | Chance Node
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 2 | Score -0.012500000000000178
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+            - Depth 1 | Player 1 | Move 4 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 3 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+            - Depth 1 | Player 1 | Move 5 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625
+                - Depth 2 | Player 2 | Move 4 | Score 0.5625
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+            - Depth 1 | Player 1 | Move 6 | Score 0.5625 | Chance Node
+                - Depth 2 | Player 2 | Move 6 | Score 0.5625
+                - Depth 2 | Player 2 | Move 5 | Score 0.5625

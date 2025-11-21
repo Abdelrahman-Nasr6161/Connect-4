@@ -21,6 +21,12 @@ from alpha_beta import write_tree_to_file as ab_write_tree
 from alpha_beta import DEFAULT_OUTPUT_NAME as AB_DEFAULT_NAME
 AB_AVAILABLE = True
 
+from expected_minimax import expected_minimax_with_tree as expected_minimax_func
+from expected_minimax import build_graphviz as expected_minimax_build_graph
+from expected_minimax import write_tree_to_file as expected_minimax_write_tree
+from expected_minimax import DEFAULT_OUTPUT_NAME as EXPECTED_MINIMAX_DEFAULT_NAME
+EXPECTED_MINIMAX_AVAILABLE = True 
+
 class BoardWidget(QWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -127,6 +133,13 @@ class Connect4Window(QMainWindow):
                 "build_graph": ab_build_graph,
                 "write_tree": ab_write_tree,
                 "output_base": AB_DEFAULT_NAME
+            }
+        if EXPECTED_MINIMAX_AVAILABLE:
+            self.available_algorithms["Expected Minimax"] = {
+                "func" : expected_minimax_func,
+                "build_graph" : expected_minimax_build_graph,
+                "write_tree" : expected_minimax_write_tree,
+                "output_base" : EXPECTED_MINIMAX_DEFAULT_NAME
             }
 
         self.algorithm_config = None
@@ -265,7 +278,7 @@ class Connect4Window(QMainWindow):
         write_tree = cfg["write_tree"]
         output_base = cfg["output_base"]
 
-        tree, _, ai_col = func(self.board_widget.board, 4, True)
+        tree, _, ai_col = func(self.board_widget.board, 2, True)
 
         # Generate graph
         try:
