@@ -6,7 +6,7 @@ class GraphWindow(QWidget):
     def __init__(self, image_path):
         super().__init__()
         self.setWindowTitle("Tree Graph")
-        self.resize(900, 900)
+        self.resize(1920, 1080)
 
         scroll = QScrollArea()
         layout = QVBoxLayout()

@@ -1,3 +1,10 @@
 env/
 minimax_tree.txt
+alpha_beta_tree.txt
+expected_minimax_tree.txt
+
+minimax_tree
+alpha_beta_tree
+expected_minimax_tree
+
 *.png

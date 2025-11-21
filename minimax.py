@@ -3,9 +3,15 @@ from graphviz import Digraph
 
 DEFAULT_OUTPUT_NAME = "minimax_tree"
 
+memo = {}
+
+def board_key(board):
+    """Convert board into a tuple-of-tuples for hashing."""
+    return tuple(tuple(row) for row in board)
+
 def build_graphviz(node, graph=None):
     if graph is None:
-        graph = Digraph(format='png')
+        graph = Digraph(format='png', encoding='utf-8')
         graph.attr(rankdir="TB")  # top → bottom tree
 
     # Unique id for node
@@ -42,14 +48,16 @@ def write_tree_to_file(root, filename="minimax_tree.txt"):
         
 def minimax_with_tree(board, depth, maximizing_player, current_depth=0):
     valid_moves = get_moves(board)
-
+    key = (board_key(board),depth,maximizing_player)
     # Create a node for this state
     node = TreeNode(
         move=None,
         player=2 if maximizing_player else 1,
         depth=current_depth
     )
-
+    if key in memo:
+        node.score = memo[key]
+        return node , node.score, None
     if depth == 0 or is_terminal(board):
         node.score = heurestic(board)
         return node, node.score, None
