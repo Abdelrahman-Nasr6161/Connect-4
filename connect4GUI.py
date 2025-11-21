@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QSpinBox
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtGui import QPainter, QColor, QPen, QRadialGradient, QLinearGradient
 import sys
@@ -192,6 +192,18 @@ class Connect4Window(QMainWindow):
         self.alg_combo = QComboBox()
         self.alg_combo.addItems(list(self.available_algorithms.keys()))
         sel_layout.addWidget(self.alg_combo)
+        
+        self.depth_spinbox = QSpinBox()
+        self.depth_spinbox.setRange(1, 4)  # Set the range for depth selection
+        self.depth_spinbox.setValue(3)  # Set default value to 4
+        self.depth_spinbox.setStyleSheet("""
+            QSpinBox {
+            background: #1f2937; color: white;
+            border: 1px solid #374151; padding: 6px;
+            border-radius: 6px; min-width: 60px;
+            }
+        """)
+        sel_layout.addWidget(self.depth_spinbox)
 
         self.start_btn = QPushButton("Start Game")
         self.start_btn.clicked.connect(self.start_game)
@@ -307,7 +319,9 @@ class Connect4Window(QMainWindow):
         write_tree = cfg["write_tree"]
         output_base = cfg["output_base"]
 
-        tree, _, ai_col = func(self.board_widget.board, 4, True)
+        # In the ai_move method, replace the placeholder with:
+        depth = self.depth_spinbox.value()
+        tree, _, ai_col = func(self.board_widget.board, depth, True)
 
         # Generate graph
         try:
