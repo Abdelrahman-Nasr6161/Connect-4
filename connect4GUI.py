@@ -197,7 +197,36 @@ class Connect4Window(QMainWindow):
         btn_layout.addStretch()
 
         self.reset_btn = QPushButton("New Game")
-        self.reset_btn.clicked.connect(self.reset_game)
+        # When clicked, return to the main menu (show selection, hide board) and reset state
+        def back_to_menu():
+            # reset board and internal game state
+            self.board_widget.board = [[0 for _ in range(COLS)] for _ in range(ROWS)]
+            self.board_widget.update()
+            self.game_over = False
+            self.is_player_turn = True
+
+            self.player_fours = 0
+            self.player_prev_fours = 0
+            self.ai_fours = 0
+            self.ai_prev_fours = 0
+
+            # hide board / tree and show selection menu
+            self.board_widget.setVisible(False)
+            self.selection_widget.setVisible(True)
+            self.reset_btn.setVisible(False)
+
+            # reset status label
+            self.status_label.setText("Select algorithm and press Start")
+            self.status_label.setStyleSheet("font-size: 20px; color: #f87171;")
+
+            # close any open tree window
+            try:
+                if hasattr(self, "tree_window") and self.tree_window:
+                    self.tree_window.close()
+            except Exception:
+                pass
+
+        self.reset_btn.clicked.connect(back_to_menu)
         self.reset_btn.setVisible(False)
         btn_layout.addWidget(self.reset_btn)
 
