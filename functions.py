@@ -1,4 +1,3 @@
-import random
 ROWS = 6
 COLS = 7
 
