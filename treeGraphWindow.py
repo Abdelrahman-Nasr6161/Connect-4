@@ -5,7 +5,7 @@ from PyQt5.QtCore import Qt
 class GraphWindow(QWidget):
     def __init__(self, image_path):
         super().__init__()
-        self.setWindowTitle("Minimax Tree Graph")
+        self.setWindowTitle("Tree Graph")
         self.resize(900, 900)
 
         scroll = QScrollArea()

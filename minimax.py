@@ -1,7 +1,8 @@
 from functions import *
-from PyQt5.QtWidgets import QApplication, QTreeWidget, QTreeWidgetItem, QWidget, QVBoxLayout
-import sys
 from graphviz import Digraph
+
+DEFAULT_OUTPUT_NAME = "minimax_tree"
+
 def build_graphviz(node, graph=None):
     if graph is None:
         graph = Digraph(format='png')
@@ -21,6 +22,7 @@ def build_graphviz(node, graph=None):
         build_graphviz(child, graph)
 
     return graph
+
 def write_tree_to_file(root, filename="minimax_tree.txt"):
     """Write the minimax tree to a text file in a readable hierarchical format."""
     with open(filename, "w") as f:
