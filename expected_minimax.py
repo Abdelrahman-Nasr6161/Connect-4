@@ -1,6 +1,6 @@
 from functions import *
 from graphviz import Digraph
-DEFAULT_OUTPUT_NAME = "expected-minimax"
+DEFAULT_OUTPUT_NAME = "expected-minimax_tree"
 
 memo = {}
 
