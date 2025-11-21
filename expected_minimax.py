@@ -2,17 +2,32 @@ from functions import *
 from graphviz import Digraph
 DEFAULT_OUTPUT_NAME = "expected-minimax"
 
+memo = {}
+
+def board_key(board):
+    """Convert board into a tuple-of-tuples for hashing."""
+    return tuple(tuple(row) for row in board)
+
 def expected_minimax_with_tree(board, depth, maximizing_player, current_depth=0):
     valid_moves = get_moves(board)
+    key = (board_key(board), depth, maximizing_player)
 
+    # Create decision node for this state
     node = TreeNode(
         move=None,
         player=2 if maximizing_player else 1,
         depth=current_depth
     )
 
+    # ✔️ Memoized return
+    if key in memo:
+        node.score = memo[key]
+        return node, node.score, None
+
+    # Terminal condition
     if depth == 0 or is_terminal(board) or not valid_moves:
         node.score = heurestic(board)
+        memo[key] = node.score
         return node, node.score, None
 
     if maximizing_player:
@@ -26,7 +41,7 @@ def expected_minimax_with_tree(board, depth, maximizing_player, current_depth=0)
                 depth=current_depth,
                 probability=1.0
             )
-            
+
             expected_score = 0
             neighbors = [n for n in (move-1, move+1) if n in valid_moves]
 
@@ -42,9 +57,11 @@ def expected_minimax_with_tree(board, depth, maximizing_player, current_depth=0)
                 child_node, score, _ = expected_minimax_with_tree(
                     new_board, depth-1, False, current_depth+1
                 )
+
                 child_node.move = actual_move
                 child_node.probability = prob
                 chance_node.children.append(child_node)
+
                 expected_score += prob * score
 
             chance_node.score = expected_score
@@ -55,8 +72,10 @@ def expected_minimax_with_tree(board, depth, maximizing_player, current_depth=0)
                 best_move = move
 
         node.score = max_eval
+        memo[key] = max_eval
         return node, max_eval, best_move
 
+    # ---------------- MINIMIZING PLAYER ----------------
     else:
         min_eval = float('inf')
         best_move = None
@@ -68,7 +87,7 @@ def expected_minimax_with_tree(board, depth, maximizing_player, current_depth=0)
                 depth=current_depth,
                 probability=1.0
             )
-            
+
             expected_score = 0
             neighbors = [n for n in (move-1, move+1) if n in valid_moves]
 
@@ -84,9 +103,11 @@ def expected_minimax_with_tree(board, depth, maximizing_player, current_depth=0)
                 child_node, score, _ = expected_minimax_with_tree(
                     new_board, depth-1, True, current_depth+1
                 )
+
                 child_node.move = actual_move
                 child_node.probability = prob
                 chance_node.children.append(child_node)
+
                 expected_score += prob * score
 
             chance_node.score = expected_score
@@ -97,6 +118,7 @@ def expected_minimax_with_tree(board, depth, maximizing_player, current_depth=0)
                 best_move = move
 
         node.score = min_eval
+        memo[key] = min_eval
         return node, min_eval, best_move
 
 
