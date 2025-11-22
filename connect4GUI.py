@@ -1,3 +1,4 @@
+import time
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QSpinBox
 from PyQt5.QtCore import Qt, QTimer
 from PyQt5.QtGui import QPainter, QColor, QPen, QRadialGradient, QLinearGradient
@@ -321,8 +322,10 @@ class Connect4Window(QMainWindow):
 
         # In the ai_move method, replace the placeholder with:
         depth = self.depth_spinbox.value()
+        start = time.time()
         tree, _, ai_col = func(self.board_widget.board, depth, True)
-
+        end = time.time()
+        print(f"Time taken = {end-start}")
         # Generate graph
         try:
             graph = build_graph(tree)
